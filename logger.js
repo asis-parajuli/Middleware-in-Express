@@ -5,4 +5,5 @@ function log(req, res, next) {
   // next pass funtion to next middleware funtion
 }
 
+// here next indicates instance to next funtion
 module.exports = log;

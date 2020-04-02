@@ -3,4 +3,5 @@ function authenticator(req, res, next) {
   next();
 }
 
+// here next indicates instance to next funtion
 module.exports = authenticator;
