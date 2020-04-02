@@ -1,9 +1,15 @@
 const Joi = require("joi");
+const logger = require("./logger");
+const authenticator = require("./authenticator");
 const express = require("express");
 const app = express();
 
 // middleware
 app.use(express.json());
+
+// here next indicates instance to next funtion
+app.use(logger);
+app.use(authenticator);
 
 // this app object has lots of useful methods
 // methods like
